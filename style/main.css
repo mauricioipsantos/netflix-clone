@@ -1,0 +1,80 @@
+/* para declarar variaveis no css, fazemos dentro do elemento root  */
+:root {
+    /* Uma boa prática no Css, é se você já sabe as cores do seu site,
+    use-as como variáveis, pois caso precise mudar, só vai trocar em
+    um lugar. Não precisará caçar no código, os lugarem para mudar */
+    --vermelho: #e50914;
+    --preto: #141414;   
+}
+
+/* "O * remete a todo o documento renderizado dentro do html" */
+* {
+    /* retira toda a margem (espaçamento) do elemento */
+    margin: 0;
+    padding: 0;
+    /* define o limite dos elementos da box, para não ultrapassar o 
+    tamanho. Caso os elementos não caibam, eles irão se espremer,
+    mas não irão romper o limite */
+    box-sizing: border-box;
+}
+
+
+/* background-color: */
+body {
+    /* para usar variavel no css, usa o var(), passando dentro do 
+    parentesis, o nome da variável */
+    background: var(--preto);
+    /* Fonte padrão, se quiser referenciar fontes externas,
+    pode usar o google fonts. */
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* a header é uma tag HTML, toda vez que nos referimos a uma tag html no 
+css, colocamos o nome dela. E quando nos referenciamos a classe que
+criamos, colocamos o .nomedaclass */
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Header logo  */
+header .logo {
+    /* "desgrudar" a logo do canto esquerdo da tela  */
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+/* Estilizando a tag nav, dentro do header.  */
+header nav a {
+    /* Tirando o sublinhado dos botoes  */
+    text-decoration: none;
+    /* cor dos botoes  */
+    color: #AAA;
+    /* Espaçamento entre os botoes (inicio, series, filmes etc) */
+    margin-right: 10px;
+}
+
+/* Quando passar o mouse em cima dos botoes, acontecer uma ação. 
+nesse caso, mudar a cor. */
+header nav a:hover {
+    color: #fff; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
