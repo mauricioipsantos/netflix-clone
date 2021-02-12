@@ -19,7 +19,7 @@
 }
 
 
-/* background-color: */
+/* elementos base */
 body {
     /* para usar variavel no css, usa o var(), passando dentro do 
     parentesis, o nome da variável */
@@ -27,6 +27,7 @@ body {
     /* Fonte padrão, se quiser referenciar fontes externas,
     pode usar o google fonts. */
     font-family: 'Times New Roman', Times, serif;
+    color: white;
     
 }
 
@@ -64,10 +65,41 @@ header nav a:hover {
     color: #fff; 
 }
 
+/* filme principal */
+.filme-principal {
+    font-size: 16px;
+    /* linear-gradient para criar um gradient entre o texto e escurecer a img  */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-vikings.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* texto e descricao para o centro da imagem */
+    justify-content: center;
+    align-items: flex-start;
+}
 
+.filme-principal .descricao {
+    margin-bottom: 90px;
+}
 
+.titulo {
+    /* tamanho da fonte do titulo (vikings) */
+    font-size: 30px;
+}
 
+.botao {
+    /* cor e transparencia dos botoes  */
+    background-color: rgba(0,0,0,.50);
+    /* retira as bordas do botão (assistir agora e mais infos) */
+    border: none;
+    /* cor da fonte do botao  */
+    color: white;
+    /* espaço interno do elemento (botao), 15px cima e baixo, 30px right and left */
+    padding: 15px 30px;
+}
 
+ sd
 
 
 
