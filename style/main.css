@@ -26,7 +26,7 @@ body {
     background: var(--preto);
     /* Fonte padrão, se quiser referenciar fontes externas,
     pode usar o google fonts. */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
     
 }
@@ -80,13 +80,16 @@ header nav a:hover {
 }
 
 .filme-principal .descricao {
-    margin-bottom: 90px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .titulo {
+    margin-top: 15%;
     /* tamanho da fonte do titulo (vikings) */
     font-size: 30px;
-}
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 
 .botao {
     /* cor e transparencia dos botoes  */
@@ -97,9 +100,51 @@ header nav a:hover {
     color: white;
     /* espaço interno do elemento (botao), 15px cima e baixo, 30px right and left */
     padding: 15px 30px;
+    /* espaçamento entre os dois botoes  */
+    margin-right: 15px;
+    /* tamanho da fonte dos botoes  */
+    font-size: 12px;
+    /* indicar ação nos botoes, com o cursor do mouse ao passar em cima  */
+    cursor: pointer;
+    transition: .3s ease all;
 }
 
- sd
+.botao:hover {
+    /* alternar a cor ao passar o cursos em cima do botao  */
+    background-color: white;
+    color: black;
+}
+/* espaçamento entre icons e texto dos botoes  */
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    /* mover itens do canto esquerdo, mais para direita, pegando toda a classe 
+    container, ou seja, o titulo (netflix) e filme, descricao e botoes  */
+    margin-left: 15px;
+}
+    /* pegando a classe container, porem apenas o filme, descricao e botoes. sem o titulo  */
+.filme-principal .container {
+    width: 70%;
+}
+
+/* classe para definir o tamanho das imagens do carousel */
+.box-filme {
+    /* a imagem vai ter seu tamanho de 100% proporcional ao tamanho da box  */
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+/* propriedades da classe carrousel  */
+.carrosel-filmes {
+    /* espaçamento entre as miniaturas e o poster  */
+    margin-top: 5px; 
+}
+
+
 
 
 

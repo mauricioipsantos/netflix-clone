@@ -5,8 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Link para o css  -->
     <link rel="stylesheet" href="./style/main.css">
+
+    <!-- owl css  -->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+
+    <!-- responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+
+
+
+
+
     <title>NetFlix Clone</title>
 </head>
 
@@ -31,12 +44,20 @@
         <div class="filme-principal">
             <div class="container">
                 <h3 class="titulo">VIKINGS</h3>
-                <p class="descricao">Ragnar Lothbrok, um jovem que se considera descendente de Odin, é um guerreiro, fazendeiro e chefe de família. Visionário e sonhando viver diversas aventuras, ele acredita que as riquezas sonhadas por seu povo encontram-se além do mar Báltico. Mas para conseguir conquistá-las ele precisa convencer Earl Haraldson, o líder de seu povo, a permitir que ele e seus guerreiros viagem em direção à Inglaterra.</p>
+                <p class="descricao">Ragnar Lothbrok, um jovem que se considera descendente de Odin, é um guerreiro,
+                    fazendeiro e chefe de família. Visionário e sonhando viver diversas aventuras, ele acredita que as
+                    riquezas sonhadas por seu povo encontram-se além do mar Báltico. Mas para conseguir conquistá-las
+                    ele precisa convencer Earl Haraldson, o líder de seu povo, a permitir que ele e seus guerreiros
+                    viagem em direção à Inglaterra.</p>
                 <div class="botoes">
                     <button role="button" class="botao">
+                        <!-- font awsome  -->
+                        <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
                     <button role="button" class="botao">
+                        <!-- botao referenciado do font awsome -->
+                        <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
 
@@ -50,6 +71,58 @@
 
 
     </main>
+    <!-- criando a div carousel  -->
+    <div class="carrosel-filmes">
+        <!-- referenciando o own carousel e theme instalados no css   -->
+        <div class="owl-carousel owl-theme">
+            <!-- criando os itens (imagens) -->
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- referenciando o font awsome para pegar icons -->
+    <script src="https://kit.fontawesome.com/a0aea720c3.js"></script>
+    <!-- carregamengo do jquery owl -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <!-- referenciando o setup.js para iniciar o carousel (lista das imagens)  -->
+    <script src="js/owl/setup.js"></script>
+
 
 </body>
 
